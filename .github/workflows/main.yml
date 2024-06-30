@@ -1,1 +1,10 @@
-
+tee /etc/docker/daemon.json <<EOF
+{
+  "registry-mirrors": [
+    "https://docker.m.daocloud.io",
+    "https://noohub.ru",
+    "https://huecker.io",
+    "https://dockerhub.timeweb.cloud"
+  ]
+}
+EOF
